@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Cycle Top Indicator Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            background-color: #f1f1f1;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .accordion:active, .accordion:focus {
+            background-color: #ddd;
+        }
+        .panel {
+            padding: 0 10px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+        .key-takeaways {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .key-takeaways li {
+            padding: 10px;
+            background: #f1f1f1;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .accordion {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pi Cycle Top Indicator Overview</h1>
+        
+        <div class="section">
+            <h2>Overview</h2>
+            <p>The <strong>Pi Cycle Top Indicator</strong> is a popular Bitcoin indicator that uses two specific moving averages to signal potential market tops. The indicator has a red "fast" moving average and a green "slow" moving average. When the red line crosses the green line, a market top may be approaching, signaling a period of caution for potential price corrections. Unusual divergence between these lines may be hinting at potential risks, similar to Bitcoin's 2019 and 2020 corrections.</p>
+        </div>
+
+        <div class="section">
+            <h2>Step-by-Step Interpretation</h2>
+            <button class="accordion">1. Examine the Moving Averages</button>
+            <div class="panel">
+                <p>The red line (fast-moving average) and the green line (slow-moving average) are key indicators. Typically, the red line acts as support during bull markets and resistance during bear markets.</p>
+            </div>
+
+            <button class="accordion">2. Monitor Divergence and Convergence</button>
+            <div class="panel">
+                <p><strong>Convergence:</strong> When the red and green lines move toward each other, it could indicate a market top. <strong>Divergence:</strong> In a bull market, diverging lines may signal caution.</p>
+            </div>
+
+            <button class="accordion">3. Look for Trend Reversals</button>
+            <div class="panel">
+                <p>Trend reversal signs, like gravestone doji patterns or changes in the red line's position, can suggest a potential market reversal.</p>
+            </div>
+
+            <button class="accordion">4. Confirm with Price Action</button>
+            <div class="panel">
+                <p>Bitcoin needs to surpass the recent high (e.g., $72,000) and establish multiple candles above this level to confirm the uptrend.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>BUY and SELL Criteria</h2>
+            <p><strong>BUY Signal:</strong></p>
+            <ul>
+                <li>Price consistently holds the red moving average as support.</li>
+                <li>Confirm uptrend if Bitcoin surpasses a major resistance (like $72,000) with sustained high-timeframe candles.</li>
+                <li>No divergence between red and green lines, indicating strong trend momentum.</li>
+            </ul>
+            <p><strong>SELL Signal:</strong></p>
+            <ul>
+                <li>The red line crosses above or sharply diverges from the green line after a prolonged bull run.</li>
+                <li>Bitcoin fails to surpass previous swing highs or meets resistance at the red moving average.</li>
+                <li>Indicators of trend reversal (e.g., gravestone doji or double tops) appear on weekly charts, with the red line acting as resistance.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Key Takeaways</h2>
+            <ul class="key-takeaways">
+                <li>The Pi Cycle Top Indicator has historically identified market tops with a cross of the red and green lines.</li>
+                <li>Current divergence between the lines is rare in a bull market, suggesting caution.</li>
+                <li>This indicator is best for detecting market tops, with a reliable history of forecasting corrections or major reversals.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const accordions = document.querySelectorAll(".accordion");
+        accordions.forEach(accordion => {
+            accordion.addEventListener("click", function() {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</body>
+</html>
